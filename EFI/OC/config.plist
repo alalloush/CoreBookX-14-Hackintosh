@@ -2,14 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>#Maintainer</key>
-	<string>维奇(weachy)</string>
-	<key>#Tips - CN</key>
-	<string>如果你想了解更多关于 CoreBookX14 黑果玩机技巧，请查阅我的专栏 https://www.zhihu.com/column/c_1419721568574013440</string>
-	<key>#Tips - EN</key>
-	<string>If you want to learn more about hackintosh with CoreBookX14. Please visit: https://www.zhihu.com/column/c_1419721568574013440</string>
 	<key>#Version</key>
-	<string>OpenCore-CoreBookX14-220310 | OC 0.7.9</string>
+	<string>OpenCore-CoreBookX14-220310 | OC 0.8.0</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
@@ -852,6 +846,8 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
+			<key>CustomPciSerialDevice</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -863,6 +859,8 @@
 			<key>ExtendBTFeatureFlags</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>ForceAquantiaEthernet</key>
 			<false/>
 			<key>ForceSecureBootScheme</key>
 			<false/>
@@ -944,8 +942,6 @@
 			<integer>2147483650</integer>
 			<key>LogModules</key>
 			<string>*</string>
-			<key>SerialInit</key>
-			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -985,6 +981,13 @@
 			<string>Default</string>
 			<key>Vault</key>
 			<string>Optional</string>
+		</dict>
+		<key>Serial</key>
+		<dict>
+			<key>Init</key>
+			<false/>
+			<key>Override</key>
+			<false/>
 		</dict>
 		<key>Tools</key>
 		<array>
